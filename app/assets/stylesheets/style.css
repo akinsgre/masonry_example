@@ -609,3 +609,37 @@ code .nd { color: #9FAD7E; } /* CSS pseudo selector */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+.menu{
+    width: 100%;
+    background-color: #333; }
+.menu ul { margin: 0; padding: 0;    float: left; }
+.menu ul li { display:inline }
+.menu ul li a{
+    float: left; text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #333; }
+ 
+.menu ul li a:visited{
+    color: white;}
+ 
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#ccc;}
+
+.buttonlets {
+float:left;
+overflow:hidden;
+margin-top:2px;
+/*border:solid 2px red; */
+max-width:95px
+}
+.ui-button {
+    height: 20px;
+    line-height:1em;
+}
+.ui-button-text-only .ui-button-text {
+padding: 0.2em 1em;
+font-size: 12px;
+}

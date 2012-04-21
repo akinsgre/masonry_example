@@ -1,21 +1,65 @@
 <script language="javascript">
-  $('#container').masonry({
-itemSelector: '.box',
-columnWidth: 100
-});
+$(function() {
+      $( "#check" ).button();
+      $('#container').masonry({
+				  iteqmSelector: '.box',
+				  columnWidth: 100
+			      });
+  });
+
 </script>
+    
+<h1>Glenn's List</h1>
+<div class="menu">
+<ul >
+<li ><a href="#">Have a Project</a></li>
+<li ><a href="#">Need a Developer</a></li>
+<li ><a href="#">Contact Us</a></li>
+<ul>
+</div>
 
-<h1>Channels#index</h1>
+<div style="float:right;display:inline;width:50%">
+  <div class="buttonlets">
+  <input type="checkbox" id="check" /><label for="check" style="background-position:left;background-image:url(<%= asset_path 'eye.png' %>);background-repeat:no-repeat">Watch</label>
+  </div>
+  <div class="addthis_toolbox addthis_default_style buttonlets" style="" >
+    <a class="addthis_button_tweet"></a>
+  </div>
+  <div class="addthis_toolbox addthis_default_style buttonlets"  >
+    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+  </div>
+
+  <div class="addthis_toolbox addthis_default_style buttonlets" style="width:60px" >
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+  </div>
+  <div class="addthis_toolbox addthis_default_style buttonlets" >
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f9168ce642d4694"></script>
+
 <div id="container" class="clearfix">
-<div class="box col5" >
-<iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/3/charts/1?round=2&timescale=60"></iframe>
-
+<div class="box col4" >
+<h2>Shockwave Expert</h2>
+<p style="color:blue">Greg Akins</p>
+<p style="font-style:italic">20 year developing Shockwave applications</p>
+<p >I've been developing Shockwave movies since before Sockwave existed.  Back then it was called ConcussionImpact.</p>
 </div>
-<div class="box col5">
-<iframe width="450" height="250" style="border: 1px solid #cccccc;" src="http://localhost:3001/channels/1/charts/1?timescale=120&days=2&yaxis=Level&xaxis=Date&title=Test"></iframe>
+<div class="box col4" >
+<h2>Web Developer Needed</h2>
+<p>10 hours per week</p>
+<p>20 year developing Shockwave applications</p>
 </div>
-<div class="box col5">
-<iframe width="450" height="250" style="border: 1px solid #cccccc;" src="http://localhost:3001/channels/1/charts/1?timescale=120&days=2&yaxis=Level&xaxis=Date&title=Test"></iframe>
+<div class="box col4">
+<h2>FHI/HATS Zen Master</h2>
+<p>Glenn Mikut</p>
+<p>Specializing in Dinnertime interviews</p>
+</div>
+<div class="box col4">
+<h2>Scala Guru</h2>
+<p>Larry Marley</p>
+<p>I have a book.</p>
 </div>
 </div>
 
